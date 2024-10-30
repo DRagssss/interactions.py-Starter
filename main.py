@@ -6,7 +6,7 @@ bot = interactions.Client(
     intents=interactions.Intents.ALL, token="",
   # debug_scope=0,
 )  
-interactions.prefixed_commands.setup(bot, default_prefix=".")
+interactions.ext.prefixed_commands.setup(bot, default_prefix=".")
 
 
 @interactions.listen()
