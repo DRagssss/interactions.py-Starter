@@ -1,3 +1,4 @@
+from interactions.ext import prefixed_commands
 import interactions
 import glob
 import os
@@ -6,7 +7,7 @@ bot = interactions.Client(
     intents=interactions.Intents.ALL, token="",
   # debug_scope=0,
 )  
-interactions.ext.prefixed_commands.setup(bot, default_prefix=".")
+prefixed_commands.setup(bot, default_prefix=".")
 
 
 @interactions.listen()
